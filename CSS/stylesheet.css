@@ -216,11 +216,15 @@ html {
 @media screen and (max-width: 768px) {
     #formContainer {
       width: 100%;
-      padding: 20px;
+      padding: 2px;
     }
 
     #formContainerHeading {
         padding-top: 25px;
+    }
+
+    #restaurantPhoto {
+        padding: 0;
     }
   }
 
@@ -229,13 +233,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
-}
-
-@media screen and (max-width: 768px) {
-
-    #restaurantPhoto {
-        padding: 0;
-}
 }
 
 
@@ -247,11 +244,11 @@ html {
 /* Google map section */
 
 #locationSection {
-    padding: 100px;
+    padding: 20px;
 }
 
 #locationSection h2 {
-    padding: 40px;
+    padding-bottom: 20px;
 }
 
 #contactDetails {
@@ -277,11 +274,17 @@ html {
     #listDiv  {
       width: 100%;
       margin-left: 0;
+      padding: 0;
     }
 
     .map-responsive {
         width: 100%;
     }
+
+    #locationSection h2 {
+        padding-top: 5px;
+    }
+
   }
 
   ul a {
