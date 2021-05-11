@@ -70,7 +70,7 @@
                 <div class="container d-flex justify-content-center align-items-center">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <h1 id="mainH"class="mb-0 text-white display-1">Namaste</h1>
+                        <h1 id="mainH" class="mb-0 text-white display-1">Namaste</h1>
                     </div>
                 </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="container d-flex justify-content-center align-items-center">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <img id="elephantLogo" src="Images/icon.png">
+                        <img id="elephantLogo" src="Images/icon.png" alt="Logo of the restaurant">
                     </div>
                 </div>
                 </div>
@@ -107,16 +107,16 @@
 
             <!--Take Away Modal 1 -->
 
-  <div class="modal fade" id="takeAwayModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="takeAwayModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Take Away</h5>
+          <h5 class="modal-title" id="exampleModalLabel1">Take Away</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <p> We are opened Wed-Sunday, 18-23h. </p>
-            <p> To order food, please contact us by phone at <a href="tel:123 456 8">+012344568 </a> </p>
+            <p> To order food, please contact us by phone at <a href="tel:1234568">+012344568 </a> </p>
             <p> Pick-up and delivery options available (starting at £5 per order).</p>
         </div>
         <div class="modal-footer">
@@ -141,7 +141,7 @@
         <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="Images/curryplate.jpg" role="img" alt="Curry image">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="Images/curryplate.jpg" alt="Curry image">
       </div>
     </div>
 
@@ -155,7 +155,7 @@
              consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="Images/tea.jpg" role="img" alt="Decorative image of tea">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="Images/tea.jpg" alt="Decorative image of tea">
 
       </div>
     </div>
@@ -169,7 +169,7 @@
             consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
       </div>
       <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="Images/table.jpg" role="img" alt="Curry image">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="Images/table.jpg" alt="Curry image">
 
       </div>
     </div>
@@ -213,7 +213,7 @@
   <section id="menu">
       
     <div class="container-md">
-        <h2 id="heading2" class="text-center featurette-heading">Our menu</h2>
+        <h2 class="text-center featurette-heading">Our menu</h2>
         <img src="Images/menu.png" id="menuImg" class="img-fluid" alt="Restaurant menu">    
     </div>
 
@@ -221,7 +221,7 @@
   
         <button id="buttonTakeAway" type="button" class="buttonOrder btn btn-warning btn-lg btn-outline-light " data-bs-toggle="modal" data-bs-target="#exampleModal">Order take away</button>
         <br>
-        <button type="button" class="buttonOrder btn btn-danger btn-lg"><a href="booking.html" id="buttonOrdering">Book a table</a> </button>
+        <a href="booking.html" role="button" class="buttonOrder btn btn-danger btn-lg" id="buttonOrdering">Book a table</a>
 
         <hr class="featurette-divider">
           
@@ -236,7 +236,7 @@
         </div>
         <div class="modal-body">
             <p> We are opened Wed-Sunday, 18-23h. </p>
-          <p> To order food, please contact us by phone at <a href="tel:123 456 8">+012344568 </a> </p>
+          <p> To order food, please contact us by phone at <a href="tel:1234568">+012344568 </a> </p>
           <p> Pick-up and delivery options available (starting at £5 per order).</p>
         </div>
         <div class="modal-footer">
@@ -246,8 +246,7 @@
     </div>
   </div>
   
-</div>
-
+</section>
 
 
   <!--  End of Food menu -->
@@ -327,10 +326,10 @@
   
             <div class="mt-4">
             <h5 class="text-uppercase mb-4 namaste1">Follow us on social media</h5>
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-instagram"></i></a>
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
-              <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+              <a href="" role="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+              <a href="" role="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-instagram"></i></a>
+              <a href="" role="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+              <a href="" role="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
             </div>
           </div>
           <!--Grid column-->
