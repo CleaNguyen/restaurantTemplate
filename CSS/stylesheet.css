@@ -1,0 +1,271 @@
+/* General styling */
+
+body {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#namasteA, .namaste1, #namasteB {
+    color: #d6b951;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar styling */
+
+.nav-item:hover {
+    text-decoration: underline;
+    }
+
+.navbar-brand, #namasteB {
+    letter-spacing: 3px;
+    font-size: 2rem;
+  }
+
+  #navbarTogglerDemo02, #navbarTogglerDemo03 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2px;
+  }
+
+
+/* Design block section*/
+
+.bg-image { 
+    height: 100vh; 
+}
+
+#intro {
+    position: relative;
+    background: black;
+    overflow: hidden;
+    padding: 160px;
+}
+
+.bg-image::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    background-image: url('spoons.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+ 
+
+#mainH {
+    color: whitesmoke;
+    padding-top: 25%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 500 !important;
+    font-size: 6rem;
+    letter-spacing: 20px;
+    position: relative;
+    z-index: 2;
+    }
+    
+.subHeading {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    text-decoration: none;
+    z-index: 2;
+    }
+
+.subHeading:hover {
+    text-decoration: underline;
+}
+       
+
+#elephantLogo {
+        height: 350px;
+        position: relative;
+        z-index: 2;
+    }
+
+@media screen and (max-width: 768px) {
+    #elephantLogo {
+      height: 250px;
+    }
+
+    #mainH {
+        font-size: 4rem;
+    }
+
+    .subHeading {
+        font-size: 2rem;
+    }
+
+  }
+
+/* featurette divider */
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+
+
+/* Three Columns text */
+ 
+#heading2 {
+    padding: 30px;
+}
+
+#threeCol {
+    margin-bottom: 60px;
+}
+
+#elephantIcon {
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+
+/* Menu */
+#menuImg {
+    width: 55%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media screen and (max-width: 768px) {
+    #menuImg {
+      width: 80%;
+    }
+  }
+
+#takeAway {
+    padding: 30px;
+}
+
+.buttonOrder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#buttonOrdering {
+    color: white;
+}
+
+/* Carousel */
+
+#gallery {
+    padding: 30px;
+}
+
+#myCarousel {
+    width: 60%;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    #myCarousel {
+      width: 90%;
+    }
+  }
+
+
+/* Booking Form */
+
+#formContainer {
+    padding: 100px;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    #formContainer {
+      width: 80%;
+      padding: 60px;
+    }
+
+    #formContainerHeading {
+        padding-top: 25px;
+    }
+  }
+
+#restaurantPhoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+#buttonSend {
+    padding-top: 15px;
+}
+
+
+/* Google map section */
+
+#locationSection {
+    padding: 100px;
+}
+
+#locationSection h2 {
+    padding: 40px;
+}
+
+#contactDetails {
+    padding-top: 10px;
+}
+
+#logoRestaurant {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listDiv {
+    background-color:#212529;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #listDiv  {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .map-responsive {
+        width: 100%;
+    }
+  }
+
+  ul a {
+      color: #d6b951;
+  }
+
+/* footer */
+
