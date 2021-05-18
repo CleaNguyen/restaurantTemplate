@@ -50,7 +50,7 @@
                             <a class="nav-link link-warning" href="booking.html" target="_blank">Reservation</a>
                           </li>
                         <li class="nav-item">
-                          <a class="nav-link link-light" href="findus.html" tabindex="-1" aria-disabled="true">Find us</a>
+                          <a class="nav-link link-light" href="#locationSection" tabindex="-1" aria-disabled="true">Find us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link-light" href="#gallery">Gallery</a>
@@ -305,7 +305,7 @@
     <!--Embedded Google Map section -->
 
     <div class="container" id="locationSection">
-        <h2 class="text-center featurette-heading">Where can you find us?</h2>
+        <h2 class="text-center featurette-heading" id="titleLocation">Where can you find us?</h2>
 
         <div class="row">
             <div class="col-md-6">
@@ -325,7 +325,7 @@
         </div>
 </div>
 
-    <!--Embedded Google Map section -->
+    <!--End of embedded Google Map section -->
 
     <div>
         
@@ -423,13 +423,9 @@
       
     <script>
 
-
-
-           // $(document).ready(function(){
-            
-           // $('#mainH').delay(600).animate({'opacity':'1'},800);
-          //  });
-
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar1'
+})
 
 
     </script>
