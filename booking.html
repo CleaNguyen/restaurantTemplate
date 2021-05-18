@@ -47,7 +47,7 @@
                     <a class="nav-link link-warning" href="booking.html">Reservation</a>
                   </li>
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="findus.html" tabindex="-1" aria-disabled="true">Find us</a>
+                  <a class="nav-link link-light" href="index.html#locationSection" tabindex="-1" aria-disabled="true">Find us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-light" href="index.html#gallery">Gallery</a>
@@ -65,18 +65,26 @@
     <h2 class="text-center featurette-heading" id="formContainerHeading">Book a table</h2>
     <img src="Images/photo5.jpg" class="img-fluid" id="restaurantPhoto" alt="Photo of the restaurant">
 
+
+<form id="formBooking" class="needs-validation" novalidate action="formProcessor.php" method="POST">
     <div class="row g-2">
         <div class="col-md">
           <div class="form-floating">
-            <input type="text" class="form-control" id="floatingInputGrid" placeholder="Your name" value="Your name">
+            <input name="name" type="text" class="form-control" id="floatingInputGrid"  placeholder="Your name" value="Your name" required>
             <label for="floatingInputGrid">Name and surname</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
           </div>
           </div>
 
             <div class="col-md">
               <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInputGrid2" placeholder="Phone number" value="Phone number">
+                <input name="phone" type="text" class="form-control" id="floatingInputGrid2"  placeholder="Phone number" value="Phone number" required>
                 <label for="floatingInputGrid">Phone number</label>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
               </div>
             </div>
     </div>
@@ -84,8 +92,9 @@
     <div class="row g-2">
         <div class="col-md">
               <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInputGrid3" placeholder="email@example.com" value="email@example.com">
+                <input name="email" type="email" class="form-control" id="floatingInputGrid3" placeholder="email@example.com" required>
                 <label for="floatingInputGrid">Email address</label>
+                <div class="invalid-feedback">Please enter an email address</div>
               </div>
         </div>
     </div>
@@ -93,8 +102,9 @@
 <div class="row">
     <div class="col-md">
         <div class="form-floating">
-            <input type="datetime-local" class="form-control" id="floatingInputGrid4" min="2021-05-11T18:30" max="2021-05-31T21:30">
+            <input name="date" type="datetime-local" class="form-control" id="floatingInputGrid4" min="2021-05-11T18:30" max="2021-05-31T21:30" required>
             <label for="floatingInputGrid">Pick a date and time</label>
+            <div class="invalid-feedback">Please enter a date and time</div>
         </div>
     </div>
 
@@ -103,7 +113,7 @@
 
     <div class="col-md">
         <div class="form-floating">
-            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" required>
               <option selected>Click here to select</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -120,14 +130,14 @@
 
 
 <div class="form-floating">
-    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" rows="30" cols="70"></textarea>
+    <textarea name="message" class="form-control" placeholder="Leave a comment here"  id="floatingTextarea2" rows="30" cols="70"></textarea>
     <label for="floatingTextarea2">Write here if you have any dietary requirements (vegetarian/vegan) or allergies.</label>
 </div>
 
 <div class="d-grid gap-2 col-6 mx-auto" id="buttonSend">
-    <button class="btn btn-outline-warning" type="button">Send</button>
+    <button class="btn btn-outline-warning" type="submit">Send</button>
   </div>
-
+</form>
 </div>
 
 
@@ -222,8 +232,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
+<script>
 
 
+(function () {
+  'use strict'
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+</script>
 
   </body>
 </html>
