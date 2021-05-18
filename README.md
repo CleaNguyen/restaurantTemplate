@@ -8,6 +8,8 @@ Project is created with
 * Bootstrap v5
 * CSS3
 * HTML5
+* JavaScript
+* PHP
 
 ## Other resources
 * Photos source: unsplash.com
